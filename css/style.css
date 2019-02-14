@@ -1,0 +1,151 @@
+*{ box-sizing: border-box;}
+body{ margin: 0px; padding: 0px;}
+
+.col-1 { width: 8.33% ;}
+.col-2 { width: 16.66% ;}
+.col-3 { width: 25% ;}
+.col-4 { width: 33.33% ;}
+.col-5 { width: 41.66% ;}
+.col-6 { width: 50% ;}
+.col-7 { width: 58.33% ;}
+.col-8 { width: 66.66% ;}
+.col-9 { width: 75% ;}
+.col-10 { width: 83.33% ;}
+.col-11 { width: 91.66% ;}
+.col-12 { width: 100% ;}
+
+[class*='col-']{
+    float: left;
+    border: 1px solid gray;
+}
+
+.row:after{
+    content: ' ';
+    clear: both;
+    display: block;
+}
+.container{
+    width: 90%;
+    height: auto;
+    margin: 0 auto;
+}
+
+.top-header-height{ height: 50px;}
+.header-height{ height: 200px;}
+.menu-height{ height: 50px;}
+.slider-height{ height: 350px;}
+.content-height{ height: 750px;}
+.big-footer-height{ height: 250px;}
+.footer-height{ height: 50px;}
+
+#sec-menu{
+    background-color: black;
+    color: white;
+    display: block;
+}
+
+ul{
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    float: right;
+}
+ul li{
+    width: 120px;
+    float: left;
+}
+ul li a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    text-align: center;
+    margin-top: 15px;
+}
+h3{
+    letter-spacing: 3px;
+    word-spacing: 5px;
+    color: blue;
+    font-weight: bold;
+    border-left: 3px solid blue;
+    text-shadow: 3px 3px 3px red;
+
+
+}
+p{
+    text-align: justify;
+    font-weight: 200;
+
+}
+#sec-slider{
+    background-color: whitesmoke;
+    padding: 10px 0px;
+}
+
+.img-responsive{
+    height: 100%;
+    width: 100%;
+}
+
+.content-img{
+    height: 130px;
+    width: 130px;
+    float: left;
+    margin-right: 10px;
+    transition-duration: .25s;
+
+}
+.content-img:hover{
+    height: 200px;
+    width: 200px;
+    border-radius: 20px;
+
+}
+
+#sec-content{
+    background-color: lightgray;
+    padding: 10px 0px;
+
+}
+.read-more-btn{
+    height: 50px;
+    width: 120px;
+    background-color: black;
+    color: white;
+    text-align: center;
+    text-decoration: none;
+    padding: 15px 5px;
+    float: left;
+    transition-duration: .5s;
+
+}
+.read-more-btn:hover {
+    background-color: green;
+    color: Red;
+    border-radius: 10px;
+    font-weight: 300;
+    font-size: 20px;
+
+}
+
+.sec-big-footer{
+    background-color: black;
+    /*background: linear-gradient(darkblue ,yellowgreen ,gray);*/
+
+}
+
+#p1{
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+
+}
+
+
+
+
+@media screen and (max-width: 500px){
+    [class*='col-']{
+        width: 100%;
+    }
+
+}
